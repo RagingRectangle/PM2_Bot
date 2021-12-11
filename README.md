@@ -29,3 +29,8 @@ npm install
 - **ignore:** List of PM2 processes to ignore if you don't want buttons for them.
 - **madDB:** Basic MAD database info. Leave blank if you don't plan on using the truncate quest feature.
 - **truncateTrigger:** Trigger to truncate quests and reload MAD instances.
+
+## Start
+```
+node pm2.js
+```
