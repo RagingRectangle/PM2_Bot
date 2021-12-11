@@ -12,9 +12,10 @@ A simple Discord bot to help control PM2 processes with the option to create a t
 
 ## Install
 ```
-git clone
-do this
-then this
+git clone https://github.com/RagingRectangle/PM2_MAD_Bot.git
+cd PM2_MAD_Bot
+cp config.json.example config.json
+npm install
 ```
 
 ## Setup
