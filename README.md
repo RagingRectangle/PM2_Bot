@@ -11,6 +11,10 @@ Rescan Quests:
 A simple Discord bot to help control PM2 processes with the option to create a trigger that will truncate quests and reload MAD processes to rescan them.
 
 ## Install
-
+```
+git clone
+do this
+then this
+```
 
 ## Setup
