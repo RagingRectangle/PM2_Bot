@@ -1,0 +1,21 @@
+{
+    "serverName": "",
+    "delaySeconds": 0,
+    "discord": {
+        "prefix": "",
+        "adminIDs": [""],
+        "token": ""
+    },
+    "pm2": {
+        "pm2Trigger": "",
+        "mads": [""],
+        "ignore": [""]
+    },
+    "madDB": {
+        "host": "",
+        "user": "",
+        "password": "",
+        "database": "",
+        "truncateTrigger": ""
+    }
+}
