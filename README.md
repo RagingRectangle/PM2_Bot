@@ -24,11 +24,11 @@ npm install
 - **prefix:** Not needed but can be used for Discord triggers.
 - **adminIDs:** List of Discord users that can execute commands or push buttons.
 - **token:** Discord bot token.
-- **pm2Trigger:** Trigger to send PM2 controller message.
+- **pm2Command:** Command to send PM2 controller message.
 - **mads:** List of MAD PM2 processes that should be reloaded after truncating quests.
 - **ignore:** List of PM2 processes to ignore if you don't want buttons for them.
 - **madDB:** Basic MAD database info. Leave blank if you don't plan on using the truncate quest feature.
-- **truncateTrigger:** Trigger to truncate quests and reload MAD instances.
+- **truncateCommand:** Command to truncate quests and reload MAD instances.
 
 ## Start
 ```

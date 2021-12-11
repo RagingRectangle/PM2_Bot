@@ -7,7 +7,7 @@
         "token": ""
     },
     "pm2": {
-        "pm2Trigger": "",
+        "pm2Command": "",
         "mads": [""],
         "ignore": [""]
     },
@@ -16,6 +16,6 @@
         "user": "",
         "password": "",
         "database": "",
-        "truncateTrigger": ""
+        "truncateCommand": ""
     }
 }

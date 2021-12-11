@@ -133,6 +133,7 @@ client.on('interactionCreate', async interaction => {
 			}
 		}) //End of pm2.connect
 	}
+	interaction.deferUpdate();
 }); //End of client.on(interactionCreate)
 
 
