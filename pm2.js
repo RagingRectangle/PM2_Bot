@@ -28,10 +28,10 @@ client.on('messageCreate', async (receivedMessage) => {
 		return;
 	}
 	//Send PM2 list/buttons
-	if (message === `${config.discord.prefix}${config.pm2.pm2Trigger}`) {
+	if (message === `${config.discord.prefix}${config.pm2.pm2Command}`) {
 		await new Promise(done => setTimeout(done, 1000 * config.delaySeconds));
 		UpdateButtons.updateButtons(receivedMessage.channel, 'new');
-	} else if (config.madDB.host && message === `${config.discord.prefix}${config.pm2.truncateTrigger}`) {
+	} else if (config.madDB.host && message === `${config.discord.prefix}${config.pm2.truncateCommand}`) {
 		await new Promise(done => setTimeout(done, 1000 * config.delaySeconds));
 		TruncateQuests.truncateQuests(client, receivedMessage);
 	}
