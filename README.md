@@ -19,3 +19,13 @@ npm install
 ```
 
 ## Setup
+- serverName: 
+- delaySeconds: 
+- prefix: 
+- pm2Trigger:
+- truncateTrigger:
+- adminIDs:
+- token:
+- mads: 
+- ignore 
+- madDB: 
