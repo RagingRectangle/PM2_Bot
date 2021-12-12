@@ -37,8 +37,14 @@ module.exports = {
                         buttonList.push(button);
                     }
                 }) //End of response.forEach
-                let rowsNeeded = Math.ceil(buttonList.length / 5);
-                let buttonsNeeded = buttonList.length;
+                var rowsNeeded = Math.ceil(buttonList.length / 5);
+                if (rowsNeeded > 4){
+                    rowsNeeded = 4;
+                }
+                var buttonsNeeded = buttonList.length;
+                if (buttonsNeeded > 19){
+                    buttonsNeeded = 19;
+                }
                 var buttonCount = 0;
                 var messageComponents = [];
                 for (var n = 0; n < rowsNeeded && n < 4; n++) {
