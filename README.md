@@ -8,7 +8,7 @@ Rescan Quests:
 ![Truncate](https://media.giphy.com/media/mBg4I8FD1TpgIHtJvv/giphy.gif)
 
 ## About
-A simple Discord bot to help control PM2 processes with the option to create a trigger that will truncate quests and reload MAD processes to rescan them. (**Bot token and node 16+ required**)
+A simple Discord bot to help control PM2 processes with the option to create a trigger that will truncate quests and reload MAD processes to rescan them.
 
 ## Requirements
 1: Node 16+ installed on server
