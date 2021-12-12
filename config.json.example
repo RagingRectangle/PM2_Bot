@@ -4,6 +4,7 @@
     "discord": {
         "prefix": "",
         "adminIDs": [""],
+        "channelIDs": [""],
         "token": ""
     },
     "pm2": {

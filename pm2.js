@@ -7,7 +7,7 @@ const {
 	MessageButton
 } = require('discord.js');
 const client = new Client({
-	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_MEMBERS],
+	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES],
 	partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
 });
 const fs = require('fs');
@@ -23,8 +23,11 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', async (receivedMessage) => {
-	let message = receivedMessage.content.toLowerCase();
+	let message = receivedMessage.content;
 	if (!config.discord.adminIDs.includes(receivedMessage.author.id)) {
+		return;
+	}
+	if (receivedMessage.channel.type !== "DM" && !config.discord.channelIDs.includes(receivedMessage.channel.id)){
 		return;
 	}
 	//Send PM2 list/buttons
