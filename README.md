@@ -10,6 +10,13 @@ Rescan Quests:
 ## About
 A simple Discord bot to help control PM2 processes with the option to create a trigger that will truncate quests and reload MAD processes to rescan them. (**Bot token and node 16+ required**)
 
+## Requirements
+1. Node 16+ installed on server
+2. Discord bot with:
+  - Server Members Intent
+  - Message Content Intent
+  - Read/write perms in channels
+
 ## Install
 ```
 git clone https://github.com/RagingRectangle/PM2_MAD_Bot.git
@@ -23,6 +30,7 @@ npm install
 - **delaySeconds:** If used on multiple servers you can use this to make sure the bot always responds in a specific order.
 - **prefix:** Not needed but can be used for Discord triggers.
 - **adminIDs:** List of Discord users that can execute commands or push buttons.
+- **channelIDs:** List of channels that the bot will respond in. Will also respond to DMs if they are admins.
 - **token:** Discord bot token.
 - **pm2Command:** Command to send PM2 controller message.
 - **mads:** List of MAD PM2 processes that should be reloaded after truncating quests.
