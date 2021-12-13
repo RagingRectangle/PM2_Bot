@@ -38,6 +38,7 @@ npm install
 - **ignore:** List of PM2 processes/modules to ignore if you don't want buttons for them.
 - **madDB:** Basic MAD database info. Leave blank if you don't plan on using the truncate quest feature.
 - **truncateCommand:** Command to truncate quests and reload MAD instances.
+- **onlyReloadBeforeTime:** Set this to limit when the bot will reload MAD instance (0-23).  If left blank it will always reload MADs.  If an event ends at 20:00 and you don't need to reload MAD because you won't be rescan quests then enter "20".
 
 ## Start
 ```
