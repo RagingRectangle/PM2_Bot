@@ -41,7 +41,7 @@ npm install
 - **onlyReloadBeforeTime:** Set this to limit when the bot will reload MAD instance (0-23).  If left blank it will always reload MADs.  If an event ends at 20:00 and you don't need to reload MAD because you won't be rescan quests then enter "20".
 
 ## Usage
-- Start the bot in a console with `node pm2.js`.
-- Can also use PM2 to run it instead with `pm2 start pm2.js`.
-- Bot will reply with the PM2 controller message when you send `<prefix><pm2Command>`.
-- Bot will truncate and reload MADs when you send `<prefix><truncateCommand>`.
+- Start the bot in a console with `node pm2.js`
+- Can also use PM2 to run it instead with `pm2 start pm2.js`
+- Bot will reply with the PM2 controller message when you send `<prefix><pm2Command>`
+- Bot will truncate and reload MADs when you send `<prefix><truncateCommand>`
