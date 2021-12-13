@@ -22,7 +22,12 @@ module.exports = {
             } else {
                 console.log(`${config.madDB.database} quests truncated`);
                 receivedMessage.channel.send(`${config.madDB.database} quests truncated`);
-                reloadMADs();
+                let date = new Date();
+                let hour = date.getHours();
+                if (!config.madDB.onlyReloadBeforeTime || hour < config.madDB.onlyReloadBeforeTime){
+                    reloadMADs();
+                }
+                
             }
         });
         connection.end();
