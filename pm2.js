@@ -34,7 +34,7 @@ client.on('messageCreate', async (receivedMessage) => {
 	if (message === `${config.discord.prefix}${config.pm2.pm2Command}`) {
 		await new Promise(done => setTimeout(done, 1000 * config.delaySeconds));
 		UpdateButtons.updateButtons(receivedMessage.channel, 'new');
-	} else if (config.madDB.host && config.madDB.truncateCommand && message === `${config.discord.prefix}${config.pm2.truncateCommand}`) {
+	} else if (config.madDB.host && config.madDB.truncateCommand && message === `${config.discord.prefix}${config.madDB.truncateCommand}`) {
 		await new Promise(done => setTimeout(done, 1000 * config.delaySeconds));
 		TruncateQuests.truncateQuests(client, receivedMessage);
 	}
