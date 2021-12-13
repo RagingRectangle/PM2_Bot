@@ -2,13 +2,13 @@
     "serverName": "",
     "delaySeconds": 0,
     "discord": {
-        "prefix": "",
+        "prefix": "!",
         "adminIDs": [""],
         "channelIDs": [""],
         "token": ""
     },
     "pm2": {
-        "pm2Command": "",
+        "pm2Command": "pm2",
         "mads": [""],
         "ignore": [""]
     },
@@ -17,7 +17,7 @@
         "user": "",
         "password": "",
         "database": "",
-        "truncateCommand": "",
+        "truncateCommand": "truncate",
         "onlyReloadBeforeTime": ""
     }
 }
